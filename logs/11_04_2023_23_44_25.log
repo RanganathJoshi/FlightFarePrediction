@@ -1,0 +1,28 @@
+[2023-11-04 23:44:26,369] 23 root - INFO - Data Ingestion Started
+[2023-11-04 23:44:26,382] 27 root - INFO - Data has been fed for splitting
+[2023-11-04 23:44:26,406] 31 root - INFO - Uploaded the dataset in artifacts folder
+[2023-11-04 23:44:26,406] 34 root - INFO - Splitting the dataset
+[2023-11-04 23:44:26,409] 37 root - INFO - train valid split done
+[2023-11-04 23:44:26,434] 42 root - INFO - Data Ingestion completed
+[2023-11-04 23:44:26,447] 71 root - INFO - read train and test data complete
+[2023-11-04 23:44:26,451] 72 root - INFO - Train Dataframe Head : 
+   Unnamed: 0      Airline    Source Destination Total_Stops  Price  Journey_day  Journey_month  Dep_hour  Dep_minute  Arrival_hour  Arrival_minute  dur_hours  dur_minutes
+0        5419  Jet Airways  Banglore   New Delhi      1 stop  11087           18              3        11          40             5               5         17           25
+1       10188  Jet Airways    Mumbai   Hyderabad    non-stop   5678            6              5        19          35            21               5          1           30
+2        8279       IndiGo   Kolkata    Banglore      1 stop   3574            9              4        19          20            23              45          4           25
+3        3313  Jet Airways    Mumbai   Hyderabad    non-stop   3210            6              5         2          55             4              20          1           25
+4        4427  Jet Airways   Kolkata    Banglore      1 stop   7064            1              4        16          30            22              35          6            5
+[2023-11-04 23:44:26,453] 73 root - INFO - Test Dataframe Head : 
+   Unnamed: 0            Airline    Source Destination Total_Stops  Price  Journey_day  Journey_month  Dep_hour  Dep_minute  Arrival_hour  Arrival_minute  dur_hours  dur_minutes
+0        6570  Multiple carriers     Delhi      Cochin      1 stop   7198           24              6        19           0             1              30          6           30
+1        2218  Multiple carriers     Delhi      Cochin      1 stop   8099           15              5         8          30            19              15         10           45
+2        7275          Air India   Kolkata    Banglore      1 stop   6327           12              5        19           0            11               5         16            5
+3        4343        Jet Airways  Banglore       Delhi    non-stop   6478            3              6        17          45            20              45          3            0
+4        1830        Jet Airways   Kolkata    Banglore      1 stop  13731           24              5        14           5             4              40         14           35
+[2023-11-04 23:44:26,453] 27 root - INFO - Data Transformation started
+[2023-11-04 23:44:26,453] 33 root - INFO - Initiating Pipeline
+[2023-11-04 23:44:26,481] 91 root - INFO - Applying preprocessing object on training and testing datasets.
+[2023-11-04 23:44:26,482] 101 root - INFO - Transformation completed
+[2023-11-04 23:44:26,484] 23 root - INFO - Splitting Dependent and Independent variables
+[2023-11-04 23:44:26,515] 35 root - INFO - Model Report : {'LinearRegression': 0.5877275004192403, 'Lasso': 0.5876235844520974, 'Ridge': 0.5877083376223879, 'ElasticNet': 0.4799403975691593}
+[2023-11-04 23:44:26,515] 42 root - INFO - Best Model Found , Model Name : LinearRegression , R2 Score : 0.5877275004192403
