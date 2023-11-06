@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 @dataclass
 class ModelTrainerConfig:
-    trained_model_file_path=os.path.join("E:/iNeuron/End-end-project_2/artifacts/","model.pkl")
+    trained_model_file_path=os.path.join('artifacts','model.pkl')
 
 class ModelTrainer:
     def __init__(self):

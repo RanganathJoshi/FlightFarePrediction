@@ -15,7 +15,7 @@ from sklearn.preprocessing import OrdinalEncoder,StandardScaler,OneHotEncoder
 from src.FlightPricePrediction.utils.utils import save_object
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join("E:/iNeuron/End-end-project_2/artifacts/","preprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
 
 class DataTransformation:
     def __init__(self):

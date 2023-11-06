@@ -10,9 +10,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 class DataIngestionConfig:
-    data_path:str=os.path.join("E:/iNeuron/End-end-project_2/artifacts/","raw_data.csv")
-    train_path:str=os.path.join("E:/iNeuron/End-end-project_2/artifacts/",'train_data.csv')
-    validation_data:str=os.path.join("E:/iNeuron/End-end-project_2/artifacts/",'valid_data.csv')
+    data_path:str=os.path.join("artifacts",'raw.csv')
+    train_path:str=os.path.join("artifacts",'train_data.csv')
+    validation_data:str=os.path.join("artifacts",'valid_data.csv')
     #test_data:str=os.path.join("E:/iNeuron/End-end-project_2/artifacts/",'test_data.csv')
 
 class Ingestion:
@@ -22,7 +22,7 @@ class Ingestion:
     def initiate_data_ingestion(self):
         logging.info("Data Ingestion Started")
         try:
-            data=pd.read_csv('e:\\iNeuron\\End-end-project_2\\notebooks\\data\\train.csv')
+            data=pd.read_csv(Path(os.path.join("notebooks/data","train.csv")))
             #test=pd.read_csv('e:\\iNeuron\\End-end-project_2\\notebooks\\data\\test.csv')
             logging.info("Data has been fed for splitting")
 
